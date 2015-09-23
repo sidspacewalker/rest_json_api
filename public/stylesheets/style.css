@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+
+
+#D3Test div {
+  font: 10px "Time New Roman";
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+.fieldset-auto-width {
+  border:0;
+  padding:0; margin:0;
+}
+.fieldset-auto-width input,
+.fieldset-auto-width select
+{
+  width: 300px;
+}
+.NoteButtons {
+  width: 50px;
+}
