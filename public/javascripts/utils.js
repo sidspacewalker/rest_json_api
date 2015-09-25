@@ -167,22 +167,6 @@ function populateSongTable(data) {
     $('#library tr').each(function(x) {
         dataset.push(manager.libraryData[$(this).attr('id')].Notes);
     });
-
-    // D3 visualization
-    /*chart = d3.select('#visualize')
-                .append('svg')
-                .attr('height',800)
-                .attr('width',400)
-
-    chart.selectAll('rect')
-        .data(dataset)
-        .enter()
-        .append('rect')
-        .attr('width')
-        .attr('height')
-        .attr('x')
-        .attr('y')
-        .text(function (d) {return getDuplicates(d);})*/
 }
 
 /*
