@@ -1,0 +1,60 @@
+extends layout
+
+block content
+  h1= title
+
+  p Click the hyperlink of the songs to know more about them.
+  p Click the Note buttons to add notes to the song
+  p Use the Clear & New button to remove the data from the fields
+  p Use the Add/Update button to add a new song or update an existing one
+
+  #Wrapper
+    h2 Songs in library
+    #library
+      table
+        tbody
+    br
+    #songFields
+      fieldset(class='fieldset-auto-width')
+        input#inputID(hidden, autocomplete='off')
+        input#inputTitle(type='text', placeholder='Title', autocomplete='off')
+        br
+        input#inputArtist(type='text', placeholder='Artist', autocomplete='off')
+        br
+        select#inputGenre(, autocomplete='off', placeholder='Genre')
+          option(value='') Genre
+          option(value='Rock') Rock
+          option(value='Pop') Pop
+          option(value='Blues') Blues
+          option(value='Funk') Funk
+        br
+        #buttonGrp
+          button#NoteC(class='NoteButtons') C
+          button#NoteCS(class='NoteButtons') C#
+          button#NoteD(class='NoteButtons') D
+          button#NoteDS(class='NoteButtons') D#
+          button#NoteE(class='NoteButtons') E
+          button#NoteF(class='NoteButtons') F
+          br
+          button#NoteFS(class='NoteButtons') F#
+          button#NoteG(class='NoteButtons') G
+          button#NoteGS(class='NoteButtons') G#
+          button#NoteA(class='NoteButtons') A
+          button#NoteAS(class='NoteButtons') A#
+          button#NoteB(class='NoteButtons') B
+
+        br
+
+        input#inputMelody(type='text', placeholder='Notes' , autocomplete='off')
+
+        br
+        button#clearFieldsBtn Clear & New
+        button#addSongBtn Add
+        button#updateSongBtn(hidden) Update
+        button#deleteSongBtn(hidden) Delete
+        br
+      p
+        strong Duplicated notes:
+        #DupNotes
+  #visualize
+  #test
